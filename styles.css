@@ -151,49 +151,6 @@ nav ul li a:hover {
     background-color: var(--kleur-wit);
 }
 
-@media(max-width:768px) {
-    .hamburger {
-        display: block;
-        margin: 2em 0;
-        z-index: 101;
-    }
-
-    .hamburger.active .bar:nth-child(2){
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    nav ul {
-        position: fixed;
-        right: -100%;
-        gap: 0;
-        flex-direction: column;
-        background-color: var(--kleur-achtergrond);
-        width: 100%;
-        text-align: center;
-        transition: .3s;
-        border-bottom: 1px solid var(--kleur-blauw);
-        margin-right: 0;
-    }
-
-    nav ul li {
-        margin: 1em 0;
-        list-style: none;
-    }
-
-    nav ul.active {
-        right: 0;
-        z-index: 100;
-    }
-}
-
 /***************/
 /* HOOFDPAGINA */
 /***************/
@@ -368,6 +325,17 @@ nav ul li a:hover {
     margin-top: var(--margin-klein);
 }
 
+/***********/
+/* LOCATIE */
+/***********/
+.locatie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
 /**********/
 /* FOOTER */
 /**********/
@@ -410,6 +378,51 @@ footer p {
 /*********/
 /* MEDIA */
 /*********/
+
+/* Nav menu */
+@media(max-width:768px) {
+    .hamburger {
+        display: block;
+        margin: 2em 0;
+        z-index: 101;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    nav ul {
+        position: fixed;
+        right: -100%;
+        gap: 0;
+        flex-direction: column;
+        background-color: var(--kleur-achtergrond);
+        width: 100%;
+        text-align: center;
+        transition: .3s;
+        border-bottom: 1px solid var(--kleur-blauw);
+        margin-right: 0;
+    }
+
+    nav ul li {
+        margin: 1em 0;
+        list-style: none;
+    }
+
+    nav ul.active {
+        right: 0;
+        z-index: 100;
+    }
+}
+
 @media(min-width:769px) {
     .topfoto {
         margin-bottom: 11rem;
@@ -447,11 +460,19 @@ footer p {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    footer img {
+        justify-self: center;
+    }
+
     footer ul {
         justify-self: center;
     }
 
-    footer ul a{
-        padding: 1em;
+    footer ul:first-of-type li{
+        margin-bottom: 1em;
     }
+}
+
+@media(min-width:650px) {
+    .partyfotos
 }
