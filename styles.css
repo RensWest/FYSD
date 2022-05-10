@@ -161,11 +161,12 @@ nav ul li a:hover {
 /* TOPFOTO */
 /***********/
 .topfoto {
-    width: calc(100vw - 17px);
+    width: 100vw;
     height: 25vh;
     max-height: 30rem;
     margin-top: -7rem;
     margin-bottom: var(--margin-klein);
+    overflow-x: auto;
 }
 
 .topfoto img:first-of-type {
