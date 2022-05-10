@@ -416,6 +416,37 @@ nav ul li a:hover {
     font-weight: bolder;
 }
 
+/********/
+/* FORM */
+/********/
+.container form {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin: auto;
+    max-width: 50em;
+    gap: 1em;
+}
+
+.container form input,
+.container form textarea {
+    padding: 1em;
+}
+
+.container form button {
+    color: var(--kleur-wit);
+    font-size: var(--fs-button-klein);
+    font-family: var(--font-titel);
+    text-decoration: none;
+    padding: .5em 1em;
+    border: none;
+    background: var(--kleur-gradient);
+    border-radius: .5em;
+    margin: auto;
+    margin-top: var(--margin-klein-text);
+    cursor: pointer;
+}
+
 /****************/
 /* HURENLAATSTE */
 /****************/
