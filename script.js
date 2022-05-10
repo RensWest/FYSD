@@ -1,5 +1,3 @@
-console.log("test");
-
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector("nav ul");
 
